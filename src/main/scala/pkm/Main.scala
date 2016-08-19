@@ -13,12 +13,9 @@ object Main extends App {
 
   val secondPlayer = Dresseur(name = "Bick", hp = 500, mana = 0, pokemon = PrepareFight.giveMeSix())
 
-
-
-  while (true) {
-
-
-
+  def endGame(firstPlayer:Dresseur, secondPlayer: Dresseur):Boolean = {
+    if (firstPlayer.hp==0 && secondPlayer.hp==0 && firstPlayer.pokemon.isEmpty && secondPlayer.pokemon.isEmpty)
+      val end= true
+    end
   }
-
 }
